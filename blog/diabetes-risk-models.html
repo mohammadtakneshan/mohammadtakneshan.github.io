@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Diabetes risk models: ROC curves and clinical restraint — what a clean dashboard can hide about thresholds and leakage, by Mohammad Takneshan." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Diabetes risk models: ROC curves and clinical restraint — AI and Autonomous Systems Report</title>
+  <link rel="canonical" href="https://mohammadtakneshan.github.io/blog/diabetes-risk-models.html" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="../assets/favicon-rounded.png" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Diabetes risk models: ROC curves and clinical restraint" />
+  <meta property="og:description" content="What a clean dashboard can hide about thresholds and leakage." />
+  <meta property="og:url" content="https://mohammadtakneshan.github.io/blog/diabetes-risk-models.html" />
+  <meta property="og:image" content="https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png" />
+  <meta property="article:author" content="Mohammad Takneshan" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diabetes risk models: ROC curves and clinical restraint" />
+  <meta name="twitter:description" content="What a clean dashboard can hide about thresholds and leakage." />
+  <meta name="twitter:image" content="https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=report-4" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Diabetes risk models: ROC curves and clinical restraint",
+    "description": "What a clean dashboard can hide about thresholds and leakage.",
+    "url": "https://mohammadtakneshan.github.io/blog/diabetes-risk-models.html",
+    "image": ["https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png"],
+    "datePublished": "2026-07-19",
+    "dateModified": "2026-07-19",
+    "author": {
+      "@type": "Person",
+      "name": "Mohammad Takneshan",
+      "url": "https://mohammadtakneshan.github.io/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mohammad Takneshan"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mohammadtakneshan.github.io/blog/diabetes-risk-models.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mohammadtakneshan.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mohammadtakneshan.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Diabetes risk models: ROC curves and clinical restraint"}]}
+  </script>
+</head>
+<body>
+  <div class="shell">
+    <div class="ticker">
+      <nav aria-label="Site">
+        <a href="../">Portfolio</a>
+        <a href="./" class="cur">Blog</a>
+        <a href="../#connect">Contact</a>
+      </nav>
+      <div class="meta">
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">◐</button>
+      </div>
+    </div>
+
+    <header class="flag compact">
+      <a class="name" href="./">AI and Autonomous Systems Report</a>
+    </header>
+
+    <article class="article-wrap">
+      <header class="article-head">
+        <nav class="crumb" aria-label="Breadcrumb">
+          <a href="../">Home</a> / <a href="./">Blog</a> / ML
+        </nav>
+        <div class="kicker">ML · Healthcare</div>
+        <h1>Diabetes risk models: ROC curves and clinical restraint</h1>
+        <p class="dek">What a clean dashboard can hide about thresholds and leakage.</p>
+        <div class="article-meta">
+          <span><b>By Mohammad Takneshan</b></span>
+          <span>7 min read · July 2026</span>
+        </div>
+      </header>
+
+      <div class="article-layout">
+        <div class="prose">
+          <p class="lede">
+            An 0.89 AUC looks beautiful on a dashboard. It can still hurt someone
+            if the threshold behind it is careless.
+          </p>
+          <p>
+            For the Diabetes Superstack project I combined neural networks, CNNs, and AutoML into a deep
+            ensemble for Type 2 diabetes prediction — 80% accuracy, 0.89 ROC AUC. The tempting headline
+            writes itself. The responsible one is harder.
+          </p>
+
+          <h2>What the curve doesn't show</h2>
+          <p>
+            A single AUC number hides the operating point. In a screening context, a false negative is not
+            a rounding error — it is a person told they are fine. Choosing a threshold is a clinical
+            decision dressed as an engineering one, and it deserves the same humility.
+          </p>
+
+          <h2>Leakage is quiet</h2>
+          <p>
+            The other dashboard illusion is leakage: features that know the answer before the patient walks
+            in. Every split, every imputation step, every "just one more feature" needs the boring audit —
+            because the model will happily cheat if you let it.
+          </p>
+          <blockquote>
+            In medicine, a confident wrong answer is worse than no answer at all.
+          </blockquote>
+          <p>
+            <em>This is sample copy for the article template. Replace with the final essay when you publish.</em>
+          </p>
+
+          <p><a class="back-all" href="./">← All stories</a></p>
+        </div>
+
+        <aside class="rail-card" aria-label="More stories">
+          <h3>More stories</h3>
+          <a href="ai-workflows-operations.html">How I ship AI workflows that survive contact with operations</a>
+          <a href="markerless-motion-capture-evaluation.html">Evaluation honesty in motion capture</a>
+          <a href="multisent-just-fine-tune-it.html">The limits of “just fine-tune it”</a>
+        </aside>
+      </div>
+    </article>
+
+    <footer class="foot">
+      <span>© 2026 Mohammad Takneshan · AI and Autonomous Systems Report</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

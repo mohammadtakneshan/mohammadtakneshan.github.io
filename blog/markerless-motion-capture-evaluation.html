@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="What markerless motion capture taught me about evaluation honesty — metrics that win a slide can still lose the lab, by Mohammad Takneshan." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>What markerless motion capture taught me about evaluation honesty — AI and Autonomous Systems Report</title>
+  <link rel="canonical" href="https://mohammadtakneshan.github.io/blog/markerless-motion-capture-evaluation.html" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="../assets/favicon-rounded.png" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What markerless motion capture taught me about evaluation honesty" />
+  <meta property="og:description" content="Metrics that win a slide can still lose the lab. Notes from a computer-vision thesis path." />
+  <meta property="og:url" content="https://mohammadtakneshan.github.io/blog/markerless-motion-capture-evaluation.html" />
+  <meta property="og:image" content="https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png" />
+  <meta property="article:author" content="Mohammad Takneshan" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What markerless motion capture taught me about evaluation honesty" />
+  <meta name="twitter:description" content="Metrics that win a slide can still lose the lab. Notes from a computer-vision thesis path." />
+  <meta name="twitter:image" content="https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=report-4" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What markerless motion capture taught me about evaluation honesty",
+    "description": "Metrics that win a slide can still lose the lab. Notes from a computer-vision thesis path.",
+    "url": "https://mohammadtakneshan.github.io/blog/markerless-motion-capture-evaluation.html",
+    "image": ["https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png"],
+    "datePublished": "2026-07-19",
+    "dateModified": "2026-07-19",
+    "author": {
+      "@type": "Person",
+      "name": "Mohammad Takneshan",
+      "url": "https://mohammadtakneshan.github.io/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mohammad Takneshan"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mohammadtakneshan.github.io/blog/markerless-motion-capture-evaluation.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mohammadtakneshan.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mohammadtakneshan.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "What markerless motion capture taught me about evaluation honesty"}]}
+  </script>
+</head>
+<body>
+  <div class="shell">
+    <div class="ticker">
+      <nav aria-label="Site">
+        <a href="../">Portfolio</a>
+        <a href="./" class="cur">Blog</a>
+        <a href="../#connect">Contact</a>
+      </nav>
+      <div class="meta">
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">◐</button>
+      </div>
+    </div>
+
+    <header class="flag compact">
+      <a class="name" href="./">AI and Autonomous Systems Report</a>
+    </header>
+
+    <article class="article-wrap">
+      <header class="article-head">
+        <nav class="crumb" aria-label="Breadcrumb">
+          <a href="../">Home</a> / <a href="./">Blog</a> / Research
+        </nav>
+        <div class="kicker">Research · Computer vision</div>
+        <h1>What markerless motion capture taught me about evaluation honesty</h1>
+        <p class="dek">Metrics that win a slide can still lose the lab. Notes from a computer-vision thesis path.</p>
+        <div class="article-meta">
+          <span><b>By Mohammad Takneshan</b></span>
+          <span>9 min read · July 2026</span>
+        </div>
+      </header>
+
+      <div class="article-layout">
+        <div class="prose">
+          <p class="lede">
+            The most dangerous number in a research paper is the one that looks best in the abstract.
+          </p>
+          <p>
+            For my TDK research at the University of Debrecen, I ran a systematic comparison of six
+            AI-driven markerless motion capture systems — OpenPose, MediaPipe, FreeMoCap, Rokoko Vision,
+            Move.ai, and Autodesk Flow Studio — against the Motion-X++ dataset, across basic, complex,
+            and deliberately challenging movement categories.
+          </p>
+
+          <h2>The slide metric vs the lab metric</h2>
+          <p>
+            Every system had a category where it shone and a category where it fell apart — occlusions,
+            fast lateral motion, unusual camera angles. Reporting only the flattering average would have
+            made a better poster and a worse paper. The honest table, the one with the failures left in,
+            is what turned the study into a guidance framework for practitioners choosing a system.
+          </p>
+          <blockquote>
+            A benchmark is a promise you make to the next researcher.
+          </blockquote>
+
+          <h2>What the committee rewarded</h2>
+          <p>
+            The work scored 46/50 at the TDK conference and was nominated for the National round. I am
+            convinced the evaluation section — the part that admitted where each system breaks — is what
+            carried it. Reviewers trust numbers that cost the author something.
+          </p>
+          <p>
+            <em>This is sample copy for the article template. Replace with the final essay when you publish.</em>
+          </p>
+
+          <p><a class="back-all" href="./">← All stories</a></p>
+        </div>
+
+        <aside class="rail-card" aria-label="More stories">
+          <h3>More stories</h3>
+          <a href="ai-workflows-operations.html">How I ship AI workflows that survive contact with operations</a>
+          <a href="diabetes-risk-models.html">ROC curves and clinical restraint</a>
+          <a href="research-lab-to-dubai-operations.html">From research lab to Dubai operations</a>
+        </aside>
+      </div>
+    </article>
+
+    <footer class="foot">
+      <span>© 2026 Mohammad Takneshan · AI and Autonomous Systems Report</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

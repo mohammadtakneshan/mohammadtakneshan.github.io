@@ -1,0 +1,10 @@
+Best Threshold: 0.33
+Accuracy: 0.7995
+Precision: 0.6676
+Recall: 0.8470
+F1: 0.7467
+ROC AUC: 0.8860
+
+Confusion Matrix:
+[[387 113]
+ [ 41 227]]

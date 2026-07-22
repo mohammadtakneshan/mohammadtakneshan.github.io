@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Mohammad Takneshan monogram</title>
+  <desc id="desc">A circular MT monogram mark.</desc>
+  <defs>
+    <linearGradient id="g" x1="32" x2="132" y1="24" y2="138" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b5f6a"/>
+      <stop offset="1" stop-color="#b45b48"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="80" fill="#fffdf8"/>
+  <circle cx="80" cy="80" r="70" fill="url(#g)"/>
+  <path fill="#fffdf8" d="M37 106V52h14l29 34 29-34h14v54h-15V75l-23 27h-10L52 75v31H37Z"/>
+  <path fill="#d6a33a" d="M45 118h70v9H45z"/>
+</svg>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="How I ship AI workflows that survive contact with operations — a field guide to demos vs production by Mohammad Takneshan." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>How I ship AI workflows that survive contact with operations — AI and Autonomous Systems Report</title>
+  <link rel="canonical" href="https://mohammadtakneshan.github.io/blog/ai-workflows-operations.html" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="../assets/favicon-rounded.png" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How I ship AI workflows that survive contact with operations" />
+  <meta property="og:description" content="A field guide to the gap between demos and production — pipelines, runbooks, and the unglamorous work that makes agentic systems useful." />
+  <meta property="og:url" content="https://mohammadtakneshan.github.io/blog/ai-workflows-operations.html" />
+  <meta property="og:image" content="https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png" />
+  <meta property="article:author" content="Mohammad Takneshan" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How I ship AI workflows that survive contact with operations" />
+  <meta name="twitter:description" content="A field guide to the gap between demos and production by Mohammad Takneshan." />
+  <meta name="twitter:image" content="https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=report-4" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How I ship AI workflows that survive contact with operations",
+    "description": "A field guide to the gap between demos and production — pipelines, runbooks, and the unglamorous work that makes agentic systems useful.",
+    "url": "https://mohammadtakneshan.github.io/blog/ai-workflows-operations.html",
+    "image": ["https://mohammadtakneshan.github.io/assets/og/blog-share-1200x630.png"],
+    "datePublished": "2026-07-08",
+    "dateModified": "2026-07-09",
+    "author": {
+      "@type": "Person",
+      "name": "Mohammad Takneshan",
+      "url": "https://mohammadtakneshan.github.io/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mohammad Takneshan"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mohammadtakneshan.github.io/blog/ai-workflows-operations.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mohammadtakneshan.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mohammadtakneshan.github.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "How I ship AI workflows that survive contact with operations"}]}
+  </script>
+</head>
+<body>
+  <div class="shell">
+    <div class="ticker">
+      <nav aria-label="Site">
+        <a href="../">Portfolio</a>
+        <a href="./" class="cur">Blog</a>
+        <a href="../#connect">Contact</a>
+      </nav>
+      <div class="meta">
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">◐</button>
+      </div>
+    </div>
+
+    <header class="flag compact">
+      <a class="name" href="./">AI and Autonomous Systems Report</a>
+    </header>
+
+    <article class="article-wrap">
+      <header class="article-head">
+        <nav class="crumb" aria-label="Breadcrumb">
+          <a href="../">Home</a> / <a href="./">Blog</a> / Systems
+        </nav>
+        <div class="kicker">Systems · Lead essay</div>
+        <h1>How I ship AI workflows that survive contact with operations</h1>
+        <p class="dek">A field guide to the gap between demos and production — pipelines, runbooks, and the unglamorous work that makes agentic systems useful.</p>
+        <div class="article-meta">
+          <span><b>By Mohammad Takneshan</b></span>
+          <span>12 min read · July 8, 2026 · Updated July 9</span>
+        </div>
+      </header>
+
+      <div class="article-layout">
+        <div class="prose">
+          <p class="lede">
+            Most AI demos end at the applause. Operations begin the next morning, when inventory is wrong,
+            a product image failed to generate, and three people are waiting on a workflow that “worked in staging.”
+          </p>
+          <p>
+            The pattern is familiar: a promising agent, a polished interface, a weekend prototype. Then the same system
+            meets merchant catalogs, rate limits, partial failures, and humans who will not re-run a broken job “just to see.”
+            Production is not a harder demo. It is a different problem.
+          </p>
+
+          <h2>Start from the work, not the model</h2>
+          <p>
+            Before choosing models or frameworks, I map the operational path: who triggers the job, which systems
+            must agree, what “done” looks like, and what happens when step four of seven fails. That map usually
+            points to boring infrastructure first — queues, credentials, backups, least-privilege access — and only
+            later to the clever part of the stack.
+          </p>
+          <blockquote>
+            If the runbook is unclear, the model will not save you. It will only fail faster.
+          </blockquote>
+          <p>
+            On Travel Avenue and the wider Osaka Group stack, that means n8n pipelines wired to catalogs and media,
+            internal tools behind WorkOS, Docker Compose on AWS, and monitoring that pages people before customers notice.
+            The “AI” layer sits on top of habits that operations already trusts.
+          </p>
+
+          <h2>Own the URL</h2>
+          <p>
+            Each post on this report is a full page with its own address — readable by people and by search engines.
+            The homepage links here; it does not host the essays inline. That keeps the portfolio scannable and gives
+            long-form writing room to rank and age well.
+          </p>
+          <p>
+            <em>This is sample copy for the first live article template. Replace with the final essay when you publish.</em>
+          </p>
+
+          <p><a class="back-all" href="./">← All stories</a></p>
+        </div>
+
+        <aside class="rail-card" aria-label="More stories">
+          <h3>More stories</h3>
+          <a href="markerless-motion-capture-evaluation.html">Evaluation honesty in motion capture</a>
+          <a href="travel-avenue-storefront.html">Travel Avenue, built to sell</a>
+          <a href="internal-tools-quiet-craft.html">Internal tools nobody demos</a>
+        </aside>
+      </div>
+    </article>
+
+    <footer class="foot">
+      <span>© 2026 Mohammad Takneshan · AI and Autonomous Systems Report</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

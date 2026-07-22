@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mohammad Takneshan — AI Automation Engineer & AI Researcher in Dubai." />
+  <meta name="theme-color" content="#fcfcfa" />
+  <title>Mohammad Takneshan — AI Automation Engineer & AI Researcher | Dubai</title>
+  <link rel="canonical" href="https://mohammadtakneshan.github.io/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon-rounded.png" type="image/png" sizes="256x256" />
+  <link rel="apple-touch-icon" href="assets/favicon-rounded.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Mohammad Takneshan — AI Automation Engineer & AI Researcher" />
+  <meta property="og:description" content="AI Automation Engineer & AI Researcher in Dubai. Work, projects, and research in machine learning and automation." />
+  <meta property="og:url" content="https://mohammadtakneshan.github.io/" />
+  <meta property="og:image" content="https://mohammadtakneshan.github.io/assets/linkedin/profile-photo.jpeg" />
+  <meta property="og:image:alt" content="Mohammad Takneshan" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohammad Takneshan — AI Automation Engineer & AI Researcher" />
+  <meta name="twitter:description" content="AI Automation Engineer & AI Researcher in Dubai. Work, projects, and research in machine learning and automation." />
+  <meta name="twitter:image" content="https://mohammadtakneshan.github.io/assets/linkedin/profile-photo.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=gal-m10" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohammad Takneshan",
+    "url": "https://mohammadtakneshan.github.io/",
+    "image": "https://mohammadtakneshan.github.io/assets/linkedin/profile-photo.jpeg",
+    "jobTitle": "AI Automation Engineer & AI Researcher",
+    "email": "mailto:mohammad.takneshan@outlook.com",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Osaka Group UAE",
+      "url": "https://www.osaka.ae/"
+    },
+    "knowsAbout": [
+      "AI automation",
+      "Agentic workflows",
+      "Machine learning",
+      "Computer vision",
+      "Natural language processing",
+      "Reinforcement learning",
+      "E-commerce"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Debrecen"
+    },
+    "sameAs": [
+      "https://github.com/mohammadtakneshan",
+      "https://linkedin.com/in/mohammadtakneshan",
+      "https://x.com/mohdtakneshan",
+      "https://bsky.app/profile/mohammadtakneshan.bsky.social"
+    ]
+  }
+  </script>
+</head>
+<body>
+<div class="container">
+
+  <!-- ── Top bar ── -->
+  <div class="topbar">
+    <img class="mark avatar-mark" id="avatarMark" src="assets/linkedin/profile-photo.jpeg" alt="Mohammad Takneshan" title="Click to enlarge" style="cursor: zoom-in" />
+
+    <!-- Dynamic island: click = expand player, double-click = iPhone view -->
+    <div class="island" id="island" title="Now playing — click to open, double-click for full view">
+      <div class="isl-compact">
+        <div class="art"></div>
+        <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="isl-player">
+        <div class="art art-lg"></div>
+        <div class="pl-meta">
+          <div class="pl-title">Morning Run — Deep Mix</div>
+          <div class="pl-artist">Electronic · what I'm running to</div>
+          <div class="pl-scrub-row">
+            <span class="t">0:00</span>
+            <div class="pl-scrub"><div class="fill"></div></div>
+            <span class="t">0:00</span>
+          </div>
+        </div>
+        <div class="pl-controls" aria-label="Music controls">
+          <button class="prev" type="button" aria-label="Previous track">‹‹</button>
+          <button class="play" type="button" aria-label="Play">▶</button>
+          <button class="next" type="button" aria-label="Next track">››</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real audio element driving the player. Playlist + wiring live in script.js. -->
+    <audio id="audio" preload="metadata"></audio>
+
+    <div class="top-right">
+      <!-- Last-update date. Hover shows the version wheel (see AGENTS.md). -->
+      <span class="date-wrap">
+        <span class="date"><u>Jul 21</u></span>
+        <span class="date-wheel" aria-hidden="true">
+          <span>Jul 19</span>
+          <span>Jul 12</span>
+          <span>Jul 11</span>
+          <span>Jul 8</span>
+        </span>
+      </span>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </div>
+
+  <!-- ── iPhone overlay (double-click) ── -->
+  <div class="phone-overlay" id="phoneOverlay">
+    <div class="iphone">
+      <div class="screen">
+        <div class="ph-island"></div>
+        <div class="statusbar"><span>06:12</span><span>𝗹𝗹 ⚡︎</span></div>
+        <div class="eq"><span></span><span></span><span></span><span></span></div>
+        <div class="screen-body">
+          <div class="ph-art"><span class="runner">🏃‍♂️</span></div>
+          <div class="track-t">Morning Run — Deep Mix</div>
+          <div class="track-a">Electronic · what I'm running to</div>
+          <div class="scrub"><div class="fill"></div></div>
+          <div class="times"><span>0:00</span><span>0:00</span></div>
+          <div class="controls" aria-label="Music controls">
+            <button class="prev" type="button" aria-label="Previous track">‹‹</button>
+            <button class="play" type="button" aria-label="Play">▶</button>
+            <button class="next" type="button" aria-label="Next track">››</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Media viewer for recognition thumbnails ── -->
+  <div class="media-viewer" id="mediaViewer" aria-hidden="true">
+    <button class="media-back" type="button" id="mediaBack" aria-label="Close media viewer">← Back</button>
+    <button class="media-nav media-prev" type="button" id="mediaPrev" aria-label="Previous image">‹</button>
+    <figure class="media-frame">
+      <img id="mediaImage" src="" alt="" />
+      <figcaption id="mediaCaption"></figcaption>
+    </figure>
+    <button class="media-nav media-next" type="button" id="mediaNext" aria-label="Next image">›</button>
+  </div>
+
+  <!-- ── Avatar viewer (click profile photo to enlarge) ── -->
+  <div class="avatar-viewer" id="avatarViewer" aria-hidden="true">
+    <button class="avatar-viewer-close" type="button" id="avatarViewerClose" aria-label="Close photo">← Back</button>
+    <figure class="avatar-frame">
+      <img id="avatarImage" src="assets/linkedin/profile-photo.jpeg" alt="Mohammad Takneshan" />
+      <figcaption>Mohammad Takneshan</figcaption>
+    </figure>
+  </div>
+
+  <!-- ── Intro ── -->
+  <div class="col">
+    <div class="intro">
+      <h1>Mohammad Takneshan</h1>
+      <div class="byline">AI Automation Engineer at <a href="https://www.osaka.ae/">Osaka Group</a> building <a href="https://travelavenue.ae">Travel Avenue</a> in Dubai, UAE</div>
+
+      <div class="headline">Intelligent systems built with curiosity and care through relentless iteration and<span id="typed"></span><span class="caret"></span></div>
+
+      <nav class="navrow">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <!-- Blogs hidden until the blog content is finished — restore this link to re-enable: <a href="blog/">Blogs</a> -->
+        <a href="#connect">Connect</a>
+      </nav>
+    </div>
+
+    <!-- ── Work (07 logo rows, 09 type) — latest → oldest, LinkedIn descriptions imported -->
+    <section id="work">
+      <h2 class="sec-h">Work</h2>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/osaka-group.png" alt="OSAKA GROUP UAE logo" />
+        <div class="body">
+          <div class="top"><h3>OSAKA GROUP UAE <span>— AI Automation Engineer</span></h3><span class="when">Feb 2026 — now</span></div>
+          <p>I build and improve automation systems for e-commerce operations at Osaka Group UAE, reducing manual effort across inventory management, product media, catalog management, CRM workflows, and SEO. I develop custom internal tools deployed and managed on AWS using Docker Compose, with employee access secured through WorkOS. I built n8n pipelines connecting our e-commerce systems, Google Drive, AI services, and internal tools to automate inventory updates, product listings, media generation, and other daily operations across Travel Avenue, Amazon, and Noon. I use Profound AI alongside Google Merchant Center, Search Console, and BigQuery to analyze product visibility, search performance, catalog health, and AI-search discoverability, turning that data into concrete improvements across SEO, product listings, and e-commerce operations. I used Replit Agent and Magic Patterns to rapidly prototype and test internal tools, storefront concepts, UI flows, and automation workflows before moving validated ideas into structured development. The AWS server is managed to enterprise and industry-standard practices, including documented backup and recovery procedures, automated health checks and monitoring alerts, and least-privilege access control using IAM roles, policies, and AWS Secrets Manager for credentials. I also built "Travel Avenue" from the ground up as Osaka Group's e-commerce website for suitcases and travel accessories in the UAE, creating a direct-to-customer channel beyond Amazon and Noon — a custom storefront focused on a responsive, polished user experience with an uncluttered design, plus server-side systems for analytics and automation including user behavior tracking, catalog workflows, and integrations supporting agentic workflows and daily e-commerce operations.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/university-of-debrecen.png" alt="University of Debrecen logo" />
+        <div class="body">
+          <div class="top"><h3>University of Debrecen <span>— AI Researcher</span></h3><span class="when">Oct 2024 — Jan 2026</span></div>
+          <p>During my undergraduate studies, I worked as a part-time Artificial Intelligence researcher at the University of Debrecen under the supervision of Dr. Attila László Gilányi, specializing in computer vision research with a focus on AI-driven markerless motion capture technology. The research was accredited and funded by the Talent UD program, presented at the University of Debrecen TDK Research Conference, and received a nomination for the National TDK Conference; the thesis paper is currently being prepared for publication in an academic journal. The implications of my research can improve the field of motion capture by reducing setup time by up to 80% and overall costs by 50% through optimized, camera-based AI workflows, lowering production time by 40% and post-processing requirements by 30% using improved data processing and motion reconstruction techniques, and advancing the accessibility and fidelity of motion capture for applications in animation, biomechanics, sports analytics, and virtual production.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/lime-light.png" alt="Lime Light Renhold AS logo" />
+        <div class="body">
+          <div class="top"><h3>Lime Light Renhold AS <span>— Web Developer, intern</span></h3><span class="when">Jul — Aug 2025</span></div>
+          <p>I did a remote web development internship at a service-based company in Oslo, Norway during my university break. I worked with other interns and experienced colleagues on planning, designing, and building web services for clients, using React.js, Tailwind CSS, and shadcn/ui. It was a great experience learning to collaborate in a real dev environment and build clean, responsive UIs.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/4ty-ai.png" alt="4TY.ai logo" />
+        <div class="body">
+          <div class="top"><h3>4TY.ai <span>— Machine Learning Engineer</span></h3><span class="when">May — Jul 2025</span></div>
+          <p>I was referred to a Machine Learning Engineer role at 4ty-engine, a startup business where I collaborated with another engineer to develop an LLM-powered chatbot for a student engagement application. The chatbot was designed to help students find relevant resources, answer questions, and connect with peers more effectively. I focused on prompt engineering, retrieval-augmented generation, response quality, and inference optimization to help students find resources, answer questions, and connect with peers.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/ib.png" alt="International Baccalaureate logo" />
+        <div class="body">
+          <div class="top"><h3>Freelance <span>— IB Internal Assessment Tutor</span></h3><span class="when">Sep 2022 — Jun 2023</span></div>
+          <p>I helped prospective IB students in completing their Internal Assessment, a research project part of their Diploma Program. Reviewing and offering academic guidance on formatting and structuring their academic papers. My areas of expertise included helping the student in, English, Business Management, Mathematics, and Physics investigations and papers. I enjoyed guiding IB students, helping them improve their research and submit stronger papers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projects (07 logos + 06 presentation) — live/ongoing → oldest, LinkedIn descriptions imported -->
+    <section id="projects">
+      <h2 class="sec-h">Projects</h2>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/travel-avenue-thumb.jpg" alt="Travel Avenue thumbnail" />
+        <div class="body">
+          <div class="top"><h3><a class="plink" href="https://travelavenue.ae" target="_blank" rel="noopener">Travel Avenue<span class="arr">↗</span></a></h3><span class="when">live</span></div>
+          <p>I designed and built Travel Avenue as an e-commerce website for suitcases, bags, and travel accessories across the UAE. I developed its custom storefront focusing on a responsive web design (RWD) for a polished user experience (UX), that is also a visually engaging experience across product discovery, collections, cart interactions, campaign content, and mobile navigation. I used Replit Agent and Magic Patterns to prototype and test storefront UI concepts, product discovery flows, and layout ideas before refining them into the final customer-facing experience. Focusing on the user experience (UX) the integration with OpenAI's ChatKit for AI-assisted customer interactions made shopping more accessible and conversational by guiding customers through product discovery, purchase assistance, and customer self-service. Cloudflare Workers provided the secure server-side layer for API communication between the storefront and OpenAI services. Focusing on the server-side the website was engineered for agentic workflows and automations that connects with n8n, internal APIs, and AWS-hosted services, allowing for automated daily e-commerce operations such as inventory reconciliation, catalogue management, product listings, generative media, alt text, and SEO content. On the analytics side, integration with PostHog provided us with event tracking, behavioral analytics, heat-maps, session insights, and web-vitals monitoring, while video integration with Mux handles optimized video processing and playback.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/travel-avenue-thumb.jpg" alt="Travel Avenue thumbnail" />
+        <div class="body">
+          <div class="top"><h3>Travel Avenue Mobile App</h3><span class="when">live</span></div>
+          <p>I built the Travel Avenue mobile app as a fully native app for iOS and Android, sharing the same Shopify backend and Cloudflare Worker, but with its own native UI. I used Expo and React Native with TypeScript, and put a clean data layer over Shopify's Storefront and Customer Account APIs so the app pulls catalogue, cart, and customer data straight from Shopify and hands checkout back to Shopify's hosted flow. For sign-in I went with Shopify Customer Account OAuth and kept the session in the device's Keychain. From there I added the native pieces I wanted the app to have: App Intents and Siri Shortcuts, home-screen widgets, deep links, haptics, an optional Face ID / Touch ID lock, and an accessibility settings screen for text size, motion, and contrast — plus English/Arabic support.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/twenty-crm.png" alt="Twenty CRM logo" />
+        <div class="body">
+          <div class="top"><h3>Travel Avenue CRM</h3><span class="when">live</span></div>
+          <p>I deployed and customized a self-hosted CRM for Travel Avenue website on the open-source Twenty CRM, chosen so customer data stays on Osaka Group's own AWS infrastructure rather than a third-party SaaS platform, owned in-house, free of per-seat fees and vendor lock-in, and cheaper to run over the long term. I extended it with a custom object model, B2B leads (lead score, priority, status), warranty cases, Shopify orders, website events, opportunities, notes, tasks, and dashboards. So sales, support, and operations work from one shared source of customer context. Travel Avenue website backend and database is hosted on Shopify, therefore I built a Shopify sync service that writes through the Twenty API rather than the database directly, with dry-run, idempotency, and cursor safety, keeping Shopify as the commerce source of truth. I ran the full stack with Docker Compose on AWS and secured internal access through a deny-by-default WorkOS gateway with role-based access, MFA, audit logging, and secrets brokered through AWS Secrets Manager.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img round" src="assets/linkedin/mimsa.jpg" alt="MIMSA logo" />
+        <div class="body">
+          <div class="top"><h3>Masaryk Medical University Student Union Website</h3><span class="when">live</span></div>
+          <p>Masaryk University is the second largest university in the Czech Republic and as an assigned representative, I built and maintain the website for the Masaryk International Medical Students Association — responsible for buying and managing the domain and providing ongoing technical support. It's a student-focused platform: a public side with events and an upcoming-events timeline, an authenticated member portal, and a Study Hub where students find study materials organised by subject and year. Behind it there's an admin content-management portal so the committee can manage events, resources, and members themselves, plus a membership-card generator that produces PDF cards. The stack is Next.js and React, Convex for the backend and database, Clerk for authentication, Tailwind CSS for styling, and Framer Motion for interactions, deployed on Vercel with cleanly separated development and production environments.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/github.svg" alt="GitHub logo" />
+        <div class="body">
+          <div class="top"><h3><a class="plink" href="https://github.com/mohammadtakneshan/google-business-mcp" target="_blank" rel="noopener">Google Business MCP Server<span class="arr">↗</span></a></h3><span class="when">May — Jun 2026</span></div>
+          <p>I built a read-only Model Context Protocol (MCP) server in Python using FastMCP, giving AI agents secure access to Google Merchant Center, Google Search Console, and Google Drive data through OAuth 2.0 credentials. It enables agents such as Codex to investigate product listings, performance, indexing, SEO, and operational files without modifying production data.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <div class="logo l-de">DE</div>
+        <div class="body">
+          <div class="top"><h3>German Education App</h3><span class="when">Aug — Dec 2025</span></div>
+          <p>As part of my journey for learning German, I'm developing an German learning application combining interactive lessons with courses, featuring adaptive curricula, vocabulary quizzes, and speaking/writing/grammar exercises. includes dynamic difficulty adjustment based on user performance, exam preparation aligned with Goethe Institute standards, and collaborated with a German tutor for content accuracy.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/university-of-debrecen.png" alt="University of Debrecen logo" />
+        <div class="body">
+          <div class="top"><h3><a class="plink" href="https://github.com/mohammadtakneshan/MultimodalEmotionRecognitionThesis" target="_blank" rel="noopener">Multimodal Emotion Recognition System<span class="arr">↗</span></a></h3><span class="when">Jan — Nov 2025</span></div>
+          <p>Developed a multimodal emotion recognition (MER) system as my BSc thesis at the University of Debrecen, supervised by Lecturer Róbert Lakatos. The system fuses four modalities — text (RoBERTa), audio (Wav2Vec2), video (CNN+Transformer), and facial expressions (FacialNet) — through attention-based fusion that dynamically weights each modality based on the emotional content of the input. Trained and evaluated on the MELD dataset, the four-modality system achieved 71% emotion recognition accuracy, approaching the 75% human baseline, and 85% on 3-class sentiment analysis — outperforming all unimodal configurations. A cross-lingual evaluation on a Persian dataset revealed a 47% drop in text model accuracy, empirically demonstrating that cultural and linguistic context is a primary barrier to deploying emotion AI globally — a finding with direct implications for real-world multimodal AI systems. Also built a full-stack desktop application with real-time training monitoring and LLM-powered result analysis, and conducted an industry assessment covering healthcare, e-learning, and conversational AI applications.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/university-of-debrecen.png" alt="University of Debrecen logo" />
+        <div class="body">
+          <div class="top"><h3><a class="plink" href="https://github.com/mohammadtakneshan/Diabetes-Superstack-A-Deep-Ensemble-for-Predicting-Type-2-Diabetes" target="_blank" rel="noopener">Diabetes Analysis<span class="arr">↗</span></a></h3><span class="when">Mar — Apr 2025</span></div>
+          <p>Developed a deep ensemble system for Type 2 diabetes prediction combining neural networks, CNNs, and AutoML, achieving 80% accuracy and 0.89 ROC AUC.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/github.svg" alt="GitHub logo" />
+        <div class="body">
+          <div class="top"><h3><a class="plink" href="https://github.com/mohammadtakneshan/Sentiment-Analysis-on-a-Custom-Dataset-Using-a-Pretrained-Model" target="_blank" rel="noopener">MultiSent<span class="arr">↗</span></a></h3><span class="when">Sep — Dec 2024</span></div>
+          <p>I developed a full-stack web application for sentiment analysis using natural language processing (NLP), in collaboration with a classmate, who worked on the frontend. I focused on backend development, implementing model training, deployment, and real-time inference. Improved app efficiency by 40% by developing a multilingual sentiment analysis system using Python, Hugging Face Transformers, and NLP tokenization for emotional tone classification; enhanced accessibility and user satisfaction through a responsive, multilingual UI (HTML, CSS, JavaScript) that received 80% positive user feedback; and enabled real-time sentiment insights with 3× faster processing by optimizing deep learning models using GPU-accelerated PyTorch.</p>
+        </div>
+      </div>
+      <div class="wrow">
+        <img class="logo logo-img" src="assets/linkedin/github.svg" alt="GitHub logo" />
+        <div class="body">
+          <div class="top"><h3><a class="plink" href="https://github.com/mohammadtakneshan/Autonomous-Parking-in-Unity" target="_blank" rel="noopener">Autonomous Parking<span class="arr">↗</span></a></h3><span class="when">Sep — Dec 2024</span></div>
+          <p>I developed an autonomous car-parking system in Unity as part of a reinforcement learning course, using ML-Agents and PyTorch for training and simulation. The project's reinforcement learning approach demonstrated clear improvements over traditional rule-based methods: reduced training time by 40% through efficient environment design and RL workflow optimization, achieved 20% faster convergence by tuning PPO hyperparameters via YAML configuration improving training stability, and reached 98% validation accuracy across over 50% of training epochs using TensorBoard for monitoring and ONNX for model deployment.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ── Project gallery: click to open, then arrow/swipe inside fullscreen ── -->
+  <div class="gallery" id="gallery">
+   <div class="gallery-stage" id="galleryStage" role="button" tabindex="0" aria-label="Open project showcase">
+    <button class="gallery-back" type="button" id="galleryBack" aria-label="Close project showcase">← Back</button>
+    <button class="gallery-nav gallery-prev" type="button" id="galleryPrev" aria-label="Previous project">‹</button>
+    <button class="gallery-nav gallery-next" type="button" id="galleryNext" aria-label="Next project">›</button>
+
+    <div class="showcase slide active">
+      <div class="product-head">
+        <img class="plogo img" src="assets/linkedin/travel-avenue-thumb.jpg" alt="" role="presentation" />
+        <a class="product-link" href="https://travelavenue.ae" target="_blank" rel="noopener">Travel Avenue</a>
+      </div>
+      <div class="composite">
+        <div class="macbook">
+          <div class="mb-screen">
+            <div class="mb-notch"></div>
+            <div class="mb-display shot">
+              <div class="app-chrome">
+                <span class="dots"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span></span>
+                <span class="url">travelavenue.ae — Luggage, Bags &amp; Travel Accessories UAE</span>
+              </div>
+              <img class="screen-shot" decoding="async" src="assets/screenshots/travelavenue-desktop.webp" alt="Travel Avenue desktop storefront" />
+            </div>
+          </div>
+          <div class="mb-base"></div>
+        </div>
+        <div class="mini-phone">
+          <div class="ph-screen shot">
+            <div class="ph-island2"></div>
+            <img class="screen-shot" decoding="async" src="assets/screenshots/travelavenue-mobile.webp" alt="Travel Avenue mobile storefront" />
+          </div>
+        </div>
+      </div>
+      <div class="caption">Travel Avenue by Osaka Group</div>
+    </div>
+
+    <!-- Travel Avenue app: four-screen native mobile showcase · Jul 2026 -->
+    <div class="showcase slide">
+      <div class="product-head">
+        <img class="plogo img" src="assets/linkedin/travel-avenue-thumb.jpg" alt="" role="presentation" />
+        <span class="product-link">Travel Avenue App</span>
+      </div>
+      <div class="app-stage">
+        <div class="app-device app-device-home">
+          <div class="app-device-screen">
+            <img src="assets/screenshots/travelavenue-app/home.webp" alt="Travel Avenue mobile app home screen" decoding="async" />
+          </div>
+        </div>
+        <div class="app-device app-device-arrivals">
+          <div class="app-device-screen">
+            <img src="assets/screenshots/travelavenue-app/new-arrivals.webp" alt="Travel Avenue mobile app new arrivals product grid" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="app-device app-device-bag">
+          <div class="app-device-screen">
+            <img src="assets/screenshots/travelavenue-app/bag.webp" alt="Travel Avenue mobile app shopping bag and checkout summary" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="app-device app-device-search">
+          <div class="app-device-screen">
+            <img src="assets/screenshots/travelavenue-app/search.webp" alt="Travel Avenue mobile app search results" loading="lazy" decoding="async" />
+          </div>
+        </div>
+      </div>
+      <div class="caption">Native iOS &amp; Android · home, discovery, search &amp; checkout</div>
+    </div>
+
+    <!-- MIMSA student union: Study Hub hero + Events / About / Admin panes · Jul 2026 -->
+    <div class="showcase slide">
+      <div class="product-head">
+        <img class="plogo img round" src="assets/linkedin/mimsa.jpg" alt="" role="presentation" />
+        <span class="product-link">Masaryk Medical University Student Union</span>
+      </div>
+      <div class="union-board">
+        <div class="union-main union-pane">
+          <div class="agent-chrome">
+            <span class="dots"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span></span>
+            <span class="url">study hub · years 1–6</span>
+          </div>
+          <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mimsa/mimsa-study-hub.webp" alt="MIMSA Study Hub — curriculum-aligned study materials organised by year" />
+        </div>
+        <div class="union-side">
+          <div class="union-pane">
+            <div class="agent-chrome">
+              <span class="dots"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span></span>
+              <span class="url">events · this week in Brno</span>
+            </div>
+            <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mimsa/mimsa-events.webp" alt="MIMSA events — upcoming events timeline for students in Brno" />
+          </div>
+          <div class="union-pane">
+            <div class="agent-chrome">
+              <span class="dots"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span></span>
+              <span class="url">about · the association</span>
+            </div>
+            <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mimsa/mimsa-about.webp" alt="MIMSA About page — the official voice of international medical students at Masaryk University" />
+          </div>
+          <div class="union-pane">
+            <div class="agent-chrome">
+              <span class="dots"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span></span>
+              <span class="url">admin · content portal</span>
+            </div>
+            <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mimsa/mimsa-admin.webp" alt="MIMSA admin portal — committee manages Study Hub subjects and resources" />
+          </div>
+        </div>
+      </div>
+      <div class="caption">Study Hub · Events · About · Admin — one student platform</div>
+    </div>
+
+    <!-- Google Business MCP: dual floating agent panes · May–Jun 2026 -->
+    <div class="showcase slide">
+      <div class="product-head">
+        <img class="plogo img" src="assets/linkedin/github.svg" alt="" role="presentation" />
+        <a class="product-link" href="https://github.com/mohammadtakneshan/google-business-mcp" target="_blank" rel="noopener">Google Business MCP</a>
+      </div>
+      <div class="agent-stage">
+        <div class="agent-pane agent-pane-back">
+          <div class="agent-chrome">
+            <span class="dots"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span></span>
+            <span class="url">mcp · tool map · read-only</span>
+          </div>
+          <div class="agent-body">
+            <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mcp/mcp-tools-map.webp" alt="Google Business MCP tool map — Merchant, GSC, Analytics, Drive, Workspace" />
+          </div>
+        </div>
+        <div class="agent-pane agent-pane-front">
+          <div class="agent-chrome">
+            <span class="dots"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span></span>
+            <span class="url">agent session · search_merchant_issues</span>
+          </div>
+          <div class="agent-body">
+            <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mcp/mcp-agent-session.webp" alt="Agent using Google Business MCP to query merchant issues" />
+          </div>
+        </div>
+      </div>
+      <div class="caption">Agents → MCP → Google APIs</div>
+    </div>
+
+    <!-- MER thesis: architecture paper + floating metrics + confusion cards · Jan–Nov 2025 -->
+    <div class="showcase slide">
+      <div class="product-head">
+        <div class="plogo mer"></div>
+        <a class="product-link" href="https://github.com/mohammadtakneshan/MultimodalEmotionRecognitionThesis" target="_blank" rel="noopener">Multimodal Emotion Recognition</a>
+      </div>
+      <div class="thesis-board">
+        <figure class="thesis-paper">
+          <figcaption class="thesis-label">Architecture · four modalities</figcaption>
+          <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mer/mer-architecture.webp" alt="MER system architecture — text, audio, video, facial fusion" />
+        </figure>
+        <div class="thesis-cards">
+          <figure class="thesis-card thesis-card-metrics">
+            <figcaption class="thesis-label">Results · 71% emotion · 85% sentiment</figcaption>
+            <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mer/mer-results.webp" alt="MER performance results bar chart and key findings" />
+          </figure>
+          <figure class="thesis-card thesis-card-conf">
+            <figcaption class="thesis-label">Confusion · fear↔surprise · sadness→neutral</figcaption>
+            <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/mer/mer-confusion.webp" alt="MER emotion confusion patterns analysis" />
+          </figure>
+        </div>
+      </div>
+      <div class="caption">Four modalities · 71% emotion · near human baseline</div>
+    </div>
+
+    <!-- Diabetes Superstack: lab monitor + floating ROC card · Mar–Apr 2025 -->
+    <div class="showcase slide">
+      <div class="product-head">
+        <img class="plogo img" src="assets/linkedin/university-of-debrecen.png" alt="" role="presentation" />
+        <a class="product-link" href="https://github.com/mohammadtakneshan/Diabetes-Superstack-A-Deep-Ensemble-for-Predicting-Type-2-Diabetes" target="_blank" rel="noopener">Diabetes Superstack</a>
+      </div>
+      <div class="lab-stage">
+        <div class="monitor">
+          <div class="mon-bezel">
+            <div class="mon-screen">
+              <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/diabetes/diabetes-metrics-dashboard.webp" alt="Diabetes Superstack ensemble metrics dashboard" />
+            </div>
+          </div>
+          <div class="mon-chin"><span class="mon-led"></span></div>
+          <div class="mon-neck"></div>
+          <div class="mon-base"></div>
+        </div>
+        <figure class="float-card">
+          <figcaption class="float-card-label">ROC · AUC 0.886</figcaption>
+          <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/diabetes/diabetes-roc-curve.webp" alt="Diabetes Superstack ROC curve" />
+        </figure>
+      </div>
+      <div class="caption">Ensemble metrics — 80% acc · 0.89 AUC</div>
+    </div>
+
+    <!-- MultiSent: dual MacBook — input → result · Sep–Dec 2024 -->
+    <div class="showcase slide">
+      <div class="product-head">
+        <img class="plogo img" src="assets/linkedin/github.svg" alt="" role="presentation" />
+        <a class="product-link" href="https://github.com/mohammadtakneshan/Sentiment-Analysis-on-a-Custom-Dataset-Using-a-Pretrained-Model" target="_blank" rel="noopener">MultiSent</a>
+      </div>
+      <div class="dual-desk">
+        <div class="macbook mb-back">
+          <div class="mb-screen">
+            <div class="mb-notch"></div>
+            <div class="mb-display shot">
+              <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/nlp/nlp1.webp" alt="MultiSent input view — enter texts for sentiment analysis" />
+            </div>
+          </div>
+          <div class="mb-base"></div>
+        </div>
+        <div class="macbook mb-front">
+          <div class="mb-screen">
+            <div class="mb-notch"></div>
+            <div class="mb-display shot">
+              <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/nlp/nl2.webp" alt="MultiSent result view — positive, neutral, and negative labels" />
+            </div>
+          </div>
+          <div class="mb-base"></div>
+        </div>
+      </div>
+      <div class="caption">Text in → sentiment out</div>
+    </div>
+
+    <!-- Autonomous Parking: dual MacBook — Unity sim + TensorBoard · Sep–Dec 2024 -->
+    <div class="showcase slide">
+      <div class="product-head">
+        <img class="plogo img" src="assets/linkedin/github.svg" alt="" role="presentation" />
+        <a class="product-link" href="https://github.com/mohammadtakneshan/Autonomous-Parking-in-Unity" target="_blank" rel="noopener">Autonomous Parking</a>
+      </div>
+      <div class="dual-desk dual-desk-rl">
+        <div class="macbook mb-back">
+          <div class="mb-screen">
+            <div class="mb-notch"></div>
+            <div class="mb-display shot">
+              <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/reinforce/r1.webp" alt="Unity ML-Agents parking lot simulation" />
+            </div>
+          </div>
+          <div class="mb-base"></div>
+        </div>
+        <div class="macbook mb-front">
+          <div class="mb-screen">
+            <div class="mb-notch"></div>
+            <div class="mb-display shot">
+              <img class="screen-shot" loading="lazy" decoding="async" src="assets/screenshots/reinforce/r2.webp" alt="TensorBoard training metrics for parking agents" />
+            </div>
+          </div>
+          <div class="mb-base"></div>
+        </div>
+      </div>
+      <div class="caption">Unity + ML-Agents + TensorBoard</div>
+    </div>
+   </div>
+   <!-- Dots live outside the stage so they never collide with the caption -->
+    <div class="dots-row" id="galleryDots">
+      <button class="on" type="button" aria-label="Show Travel Avenue"></button>
+      <button type="button" aria-label="Show Travel Avenue App"></button>
+      <button type="button" aria-label="Show Masaryk Medical University Student Union"></button>
+      <button type="button" aria-label="Show Google Business MCP"></button>
+      <button type="button" aria-label="Show Multimodal Emotion Recognition"></button>
+      <button type="button" aria-label="Show Diabetes Superstack"></button>
+      <button type="button" aria-label="Show MultiSent"></button>
+      <button type="button" aria-label="Show Autonomous Parking"></button>
+    </div>
+  </div>
+
+  <div class="col">
+    <!-- ── Research & Publications (05 cards + 08 recognition rows) ── -->
+    <section id="research">
+      <h2 class="sec-h">Research &amp; Publications</h2>
+      <div class="pub">
+        <div class="cite"><b>Multimodal Emotion Recognition: Integrating Text, Speech, and Facial Expressions for Enhanced Human and Computer Interaction</b> <a class="action-pill" href="https://dea.lib.unideb.hu/items/bd4ebd8a-85f0-4551-b48b-fa89e5e82317" target="_blank" rel="noopener">Show publication <span>↗</span></a></div>
+        <div class="meta-line">University of Debrecen · Feb 13, 2026</div>
+        <div class="note">My Bachelor of Science (BSc) thesis at the University of Debrecen focused on multimodal emotion recognition research aimed at enhancing human-computer interaction. I developed a multimodal emotion recognition (MER) system combining RoBERTa (text), Wav2Vec2 (audio), CNN+Transformer (video), and FacialNet (facial expressions) architectures through attention-based fusion. The four-modality system achieved 71% emotion recognition accuracy and 69% F1-score on the MELD dataset, approaching the 75% human baseline, and 85% accuracy on 3-class sentiment analysis, outperforming all unimodal configurations. A cross-lingual evaluation on a Persian dataset revealed a 47% drop in text model accuracy, empirically establishing cultural and linguistic context as a primary barrier to deploying emotion AI globally, with direct implications for building more robust cross-cultural HCI systems. The thesis was supervised by Lecturer Róbert Lakatos.</div>
+      </div>
+      <div class="pub">
+        <div class="cite"><b>Markerless Motion Capture with Artificial Intelligence: Current Technologies, Applications and Challenges</b></div>
+        <div class="meta-line">University of Debrecen</div>
+        <div class="note">As part of my research experience on artificial intelligence and computer vision, under the supervision of Dr. Gilányi Attila László, I began researching on markerless motion capture technology. The study involved a systematic comparative evaluation of six AI-driven markerless motion capture systems, OpenPose, MediaPipe, FreeMoCap (open-source) and Rokoko Vision, Move.ai, Autodesk Flow Studio, against the Motion-X++ dataset across basic, complex, and challenging movement categories. The core findings of this study produced a guidance framework for researchers and practitioners on technology selection and appropriate application domains. My research, presented at the Hungarian TDK Research Conference (November 2025), evaluated 46/50, nominated for the National TDK, and currently being prepared for academic journal submission.</div>
+      </div>
+
+      <h2 class="sec-h sub-h">Recognition</h2>
+      <div class="award-list">
+        <article class="award">
+          <div class="award-main">
+            <div class="top"><h3>Talent Management Program (DETEP)<a class="action-pill" href="https://detep.unideb.hu/informatikai-kar-talentud" target="_blank" rel="noopener">Show recognition <span>↗</span></a></h3><span class="when">Jan 2026</span></div>
+            <div class="meta-line">Issued by University of Debrecen, Faculty of Informatics · Associated with University of Debrecen</div>
+            <p>Presented research on AI-driven motion capture, in the Hungarian TDK Research conference. Receiving an excellent evaluation and being recommended for presentation at the National conference by the review committee.</p>
+          </div>
+          <div class="thumbs">
+            <button class="media-thumb" type="button" data-full="assets/linkedin/talent-ud-certificate.jpg" data-title="Talent UD Certificate">
+              <img src="assets/linkedin/talent-ud-certificate.jpg" alt="Talent UD Certificate thumbnail">
+            </button>
+          </div>
+        </article>
+        <article class="award">
+          <div class="award-main">
+            <div class="top"><h3>TDK Research Conference</h3><span class="when">Nov 2025</span></div>
+            <div class="meta-line">Issued by University of Debrecen, Faculty of Informatics · Associated with University of Debrecen</div>
+            <p>I had the opportunity to present my research on AI-driven motion capture, which received an excellent evaluation with 46/50 points. The reviewer also recommended the paper for presentation at the National TDK research conference. It was a great honor and an important milestone for my AI research career.</p>
+          </div>
+          <div class="thumbs">
+            <button class="media-thumb" type="button" data-full="assets/linkedin/tdk-participation.jpg" data-title="TDK Certification Participation">
+              <img src="assets/linkedin/tdk-participation.jpg" alt="TDK participation certificate thumbnail">
+            </button>
+            <button class="media-thumb" type="button" data-full="assets/linkedin/tdk-evaluation-1.jpg" data-title="Evaluation Form">
+              <img src="assets/linkedin/tdk-evaluation-1.jpg" alt="TDK evaluation form thumbnail">
+            </button>
+            <button class="media-thumb" type="button" data-full="assets/linkedin/tdk-evaluation-2.jpg" data-title="Evaluation Form 2">
+              <img src="assets/linkedin/tdk-evaluation-2.jpg" alt="TDK evaluation form 2 thumbnail">
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Education & Certificates (05 education + cert lines) ── -->
+    <section id="education">
+      <h2 class="sec-h">Education &amp; Certificates</h2>
+
+      <div class="edu">
+        <div class="top"><h3>BSc Computer Science — Excellent</h3><span class="when">2023 — 2026</span></div>
+        <div class="org">University of Debrecen, Hungary</div>
+        <p>Faculty of Informatics, ranked among the top 600 worldwide in Computer Science (THE 2025). Coursework in machine learning, reinforcement learning, computer vision, NLP, algorithms, and statistics.</p>
+      </div>
+
+      <ul class="certlist">
+        <li class="cpill"><a class="cert-link" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=A550EE71234403718DCE668F07E966C9EB314AA3C126EA794CDABE3BF69589C1" target="_blank" rel="noopener" aria-label="Show credential for Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate"><div class="cmain"><img class="dot-img" src="assets/linkedin/oracle.png" alt="Oracle logo"><span class="ct"><b>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</b> — Oracle</span><span class="y">Dec 2025</span><span class="cert-arr" aria-hidden="true">↗</span></div>
+          <div class="cdrop">Core OCI concepts and AI/ML services on Oracle Cloud Infrastructure.</div></a></li>
+        <li class="cpill"><a class="cert-link" href="https://www.coursera.org/account/accomplishments/specialization/495WI28GAZXF" target="_blank" rel="noopener" aria-label="Show credential for Machine Learning: Algorithms in the Real World Specialization"><div class="cmain"><img class="dot-img" src="assets/linkedin/amii.png" alt="Amii logo"><span class="ct"><b>Machine Learning: Algorithms in the Real World Specialization</b> — Amii, Alberta Machine Intelligence Institute</span><span class="y">Nov 2025</span><span class="cert-arr" aria-hidden="true">↗</span></div>
+          <div class="cdrop">Applied ML algorithms in the real world — regression, classification, clustering, and recommender systems.</div></a></li>
+        <li class="cpill"><a class="cert-link" href="https://coursera.org/verify/specialization/0HBE9HIIWEF0" target="_blank" rel="noopener" aria-label="Show credential for AI in Healthcare Specialization"><div class="cmain"><img class="dot-img" src="assets/linkedin/stanford-medicine.png" alt="Stanford Medicine logo"><span class="ct"><b>AI in Healthcare Specialization</b> — Stanford University School of Medicine</span><span class="y">Nov 2025</span><span class="cert-arr" aria-hidden="true">↗</span></div>
+          <div class="cdrop">Current and future applications of AI in healthcare, focused on bringing the technology into clinical settings safely and ethically.</div></a></li>
+        <li class="cpill"><a class="cert-link" href="https://learn.nvidia.com/certificates?id=5XmobOTARfWzyB6aua1k5g" target="_blank" rel="noopener" aria-label="Show credential for Generative AI with Diffusion Models"><div class="cmain"><img class="dot-img" src="assets/linkedin/nvidia.png" alt="NVIDIA logo"><span class="ct"><b>Generative AI with Diffusion Models</b> — NVIDIA</span><span class="y">Oct 2025</span><span class="cert-arr" aria-hidden="true">↗</span></div>
+          <div class="cdrop">Building and training diffusion models for generative AI, from U-Nets to guided denoising.</div></a></li>
+        <li class="cpill"><a class="cert-link" href="https://www.credly.com/badges/b82ea46e-c184-4d4d-8ba5-064c95f75f37/linked_in_profile" target="_blank" rel="noopener" aria-label="Show credential for Microsoft Certified: Azure Data Fundamentals"><div class="cmain"><img class="dot-img" src="assets/linkedin/microsoft.png" alt="Microsoft logo"><span class="ct"><b>Microsoft Certified: Azure Data Fundamentals</b> — Microsoft</span><span class="y">May 2025</span><span class="cert-arr" aria-hidden="true">↗</span></div>
+          <div class="cdrop">Core data concepts and Azure data services — relational, non-relational, and analytics workloads.</div></a></li>
+        <li class="cpill"><a class="cert-link" href="https://learn.nvidia.com/certificates?id=V5iccwWSQaK69UJF_YhkKA" target="_blank" rel="noopener" aria-label="Show credential for Applications of AI for Anomaly Detection"><div class="cmain"><img class="dot-img" src="assets/linkedin/nvidia.png" alt="NVIDIA logo"><span class="ct"><b>Applications of AI for Anomaly Detection</b> — NVIDIA</span><span class="y">Dec 2024</span><span class="cert-arr" aria-hidden="true">↗</span></div>
+          <div class="cdrop">GPU-accelerated anomaly detection with autoencoders, GANs, and XGBoost on network data.</div></a></li>
+        <li class="cpill"><a class="cert-link" href="https://learn.nvidia.com/certificates?id=-GRen-T3QaeyXxGeY7RqPQ" target="_blank" rel="noopener" aria-label="Show credential for Fundamentals of Accelerated Data Science"><div class="cmain"><img class="dot-img" src="assets/linkedin/nvidia.png" alt="NVIDIA logo"><span class="ct"><b>Fundamentals of Accelerated Data Science</b> — NVIDIA</span><span class="y">Nov 2024</span><span class="cert-arr" aria-hidden="true">↗</span></div>
+          <div class="cdrop">RAPIDS, cuDF, and cuML for end-to-end GPU-accelerated data science workflows.</div></a></li>
+        <li class="cpill"><a class="cert-link" href="https://learn.nvidia.com/certificates?id=IOWbbmvCT0m-Fh_HNEJYBg#/courses/course?course_id=course-v1:DLI+C-FX-01+V3" target="_blank" rel="noopener" aria-label="Show credential for Fundamentals of Deep Learning"><div class="cmain"><img class="dot-img" src="assets/linkedin/nvidia.png" alt="NVIDIA logo"><span class="ct"><b>Fundamentals of Deep Learning</b> — NVIDIA</span><span class="y">Oct 2024</span><span class="cert-arr" aria-hidden="true">↗</span></div>
+          <div class="cdrop">Hands-on deep learning: CNNs, data augmentation, transfer learning, and deployment.</div></a></li>
+        <li class="cpill"><div class="cmain"><img class="dot-img" src="assets/linkedin/ib.png" alt="International Baccalaureate logo"><span class="ct"><b>International Baccalaureate Diploma (Bilingual)</b> — International Baccalaureate</span><span class="y">Jul 2022</span></div>
+          <div class="cdrop">Credential ID D 051773 0012 jzm921.</div></li>
+      </ul>
+
+      <!-- Languages & Affiliations -->
+      <div class="meta2">
+        <div>
+          <h2 class="sec-h sub-h">Languages</h2>
+          <ul class="linelist">
+            <li>🇬🇧 English — Bilingual</li>
+            <li>🇮🇷 Persian — Native</li>
+            <li>🇩🇪 German — Elementary</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="sec-h sub-h">Affiliations</h2>
+          <div class="affiliations">
+            <a class="affiliation" href="https://www.i-aida.org" target="_blank" rel="noopener">
+              <span><b>International Artificial Intelligence Doctoral Academy (AIDA)</b> Member · Oct 2025 — Present</span>
+              <small>A joint initiative of five European-funded projects under Horizon 2020, created to provide access to knowledge and expertise in AI.</small>
+            </a>
+            <a class="affiliation" href="https://detep.unideb.hu/en/introduction" target="_blank" rel="noopener">
+              <span><b>Talent Management Program (DETEP)</b> Participant · Mar 2025 — Jan 2026</span>
+              <small>A University of Debrecen initiative supporting aspiring researchers through academic recognition, research funding, and professional growth.</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs live at /blog/ (broadsheet “The Takneshan Report”) — not inline on the homepage -->
+
+    <!-- ── Say hello + Contact ── -->
+    <section class="hello" id="connect">
+      <div class="hello-display">Say hello<span class="hd">.</span></div>
+      <h2 class="sec-h">Contact</h2>
+      <div class="contact-list">
+        <a class="contact-chip chip-mail" href="mailto:mohammad.takneshan@outlook.com" aria-label="Email">
+          <span class="chip-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span class="chip-label">Email</span>
+        </a>
+        <a class="contact-chip chip-linkedin" href="https://linkedin.com/in/mohammadtakneshan" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <span class="chip-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3.5 9.5h3V21h-3V9.5zM9.5 9.5h2.87v1.79h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.61V21h-3v-5.62c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V21h-3V9.5z"/></svg></span>
+          <span class="chip-label">LinkedIn</span>
+        </a>
+        <a class="contact-chip chip-github" href="https://github.com/mohammadtakneshan" target="_blank" rel="noopener" aria-label="GitHub">
+          <span class="chip-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.42.36.79 1.06.79 2.14v3.17c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></span>
+          <span class="chip-label">GitHub</span>
+        </a>
+        <a class="contact-chip chip-x" href="https://x.com/mohdtakneshan" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <span class="chip-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.5 8.58L22.5 22h-6.844l-5.36-7.02L4.16 22H.9l8.04-9.19L1.5 2h7.02l4.84 6.42L18.244 2zm-1.2 18h1.83L7.06 3.84H5.1l11.94 16.16z"/></svg></span>
+          <span class="chip-label">Twitter</span>
+        </a>
+        <a class="contact-chip chip-bluesky" href="https://bsky.app/profile/mohammadtakneshan.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky">
+          <span class="chip-ico" aria-hidden="true"><svg viewBox="0 0 24 26" fill="currentColor"><path d="M12 10.8c-1.5-3-5.5-7.3-8-7.3C2 3.5 2 6 2 7.6c0 1 .05 2.2.1 3.4.05 1 .1 2 .1 3 0 .2.05.4.05.6.05.5.1 1 .15 1.5.15 1.3.35 2.6.6 3.85.4 2 1.5 3.5 3.5 3.55 2.5.05 4.5-2.6 5.4-4.65C12 22.5 14 25.05 16.5 25c2 0 3.1-1.55 3.5-3.55.25-1.25.45-2.55.6-3.85.05-.5.1-1 .15-1.5.05-.2.05-.4.05-.6 0-1 .05-2 .1-3 .05-1.2.1-2.4.1-3.4C22 6 22 3.5 20 3.5c-2.5 0-6.5 4.3-8 7.3z"/></svg></span>
+          <span class="chip-label">Bluesky</span>
+        </a>
+        <span class="contact-loc">Dubai, United Arab Emirates</span>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="sig">Shine, constantly and steadily.</div>
+    <span id="year">2026</span> · Mohammad Takneshan
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

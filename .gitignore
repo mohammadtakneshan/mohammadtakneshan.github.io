@@ -1,0 +1,45 @@
+# OS and editor files
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# Local AI and editor tooling
+.claude/
+.codex/
+.agents/
+.opencode/
+
+# Dependencies, build output, and caches
+node_modules/
+vendor/
+dist/
+build/
+coverage/
+.cache/
+tmp/
+temp/
+.tmp/
+*.tmp
+*.log
+
+# Local screenshots and preview-only source files
+Screenshot *.png
+codex-clipboard-*.png
+design-previews/
+assets/screenshots/mcp/preview-*.html
+
+# Secrets and credential material
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets/
+credentials/
+security-credentials-trash/

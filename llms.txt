@@ -1,0 +1,36 @@
+# Mohammad Takneshan
+
+> Personal portfolio of Mohammad Takneshan — AI Automation Engineer at Osaka Group UAE in Dubai, and AI researcher (computer vision, multimodal emotion recognition). Covers work, projects, research and publications, education, and the essay collection "AI and Autonomous Systems Report".
+
+The site is static HTML. The homepage is a single-page CV; long-form writing lives in the blog. Key facts: BSc Computer Science (University of Debrecen, 2026, excellent); builds e-commerce automation at Osaka Group (n8n, AWS, Docker, WorkOS); built Travel Avenue (storefront, CRM, native iOS/Android app) and the Masaryk Medical University Student Union website.
+
+## Pages
+
+- [Portfolio](https://mohammadtakneshan.github.io/): work experience, projects, research, education, certifications, contact
+- [Blog — AI and Autonomous Systems Report](https://mohammadtakneshan.github.io/blog/): essays on AI systems, automation, research, and building
+- [RSS feed](https://mohammadtakneshan.github.io/blog/feed.xml)
+
+## Blog posts
+
+- [How I ship AI workflows that survive contact with operations](https://mohammadtakneshan.github.io/blog/ai-workflows-operations.html): demos vs production — pipelines, runbooks, and the unglamorous layer that keeps agentic tools honest
+- [Travel Avenue, from blank repo to a storefront that must sell](https://mohammadtakneshan.github.io/blog/travel-avenue-storefront.html): catalog, media, SEO, and the automation underneath a UAE luggage DTC channel
+- [What markerless motion capture taught me about evaluation honesty](https://mohammadtakneshan.github.io/blog/markerless-motion-capture-evaluation.html): metrics that win a slide can still lose the lab
+- [The quiet craft of internal tools nobody demos on Twitter](https://mohammadtakneshan.github.io/blog/internal-tools-quiet-craft.html): WorkOS, Docker Compose, and backups over another chat UI
+- [Diabetes risk models: ROC curves and clinical restraint](https://mohammadtakneshan.github.io/blog/diabetes-risk-models.html): what a clean dashboard can hide about thresholds and leakage
+- [MultiSent and the limits of "just fine-tune it"](https://mohammadtakneshan.github.io/blog/multisent-just-fine-tune-it.html): multilingual sentiment beyond one checkpoint
+- [From research lab to Dubai operations: what transferred](https://mohammadtakneshan.github.io/blog/research-lab-to-dubai-operations.html): skills that survived the jump into automation engineering
+
+## Blog sections
+
+- [Systems](https://mohammadtakneshan.github.io/blog/systems/): pipelines, ops, reliability
+- [Research](https://mohammadtakneshan.github.io/blog/research/): CV, evaluation, papers
+- [Building](https://mohammadtakneshan.github.io/blog/building/): products in the wild
+
+## Optional
+
+- [LinkedIn](https://linkedin.com/in/mohammadtakneshan)
+- [GitHub](https://github.com/mohammadtakneshan): includes the Google Business MCP server, MER thesis, and RL projects
+- [X (Twitter)](https://x.com/mohdtakneshan)
+- [Bluesky](https://bsky.app/profile/mohammadtakneshan.bsky.social)
+- [BSc thesis — Multimodal Emotion Recognition](https://dea.lib.unideb.hu/items/bd4ebd8a-85f0-4551-b48b-fa89e5e82317): University of Debrecen repository
+- [Travel Avenue](https://travelavenue.ae): e-commerce storefront built and maintained by the author

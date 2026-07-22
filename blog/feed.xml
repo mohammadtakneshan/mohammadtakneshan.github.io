@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI and Autonomous Systems Report</title>
+    <link>https://mohammadtakneshan.github.io/blog/</link>
+    <description>Essays on AI systems, automation, research, and building by Mohammad Takneshan.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Jul 2026 10:00:00 GMT</lastBuildDate>
+    <atom:link href="https://mohammadtakneshan.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>From research lab to Dubai operations: what transferred</title>
+      <link>https://mohammadtakneshan.github.io/blog/research-lab-to-dubai-operations.html</link>
+      <guid isPermaLink="true">https://mohammadtakneshan.github.io/blog/research-lab-to-dubai-operations.html</guid>
+      <description>A short map of skills that survived the jump into automation engineering.</description>
+      <pubDate>Sun, 19 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>MultiSent and the limits of “just fine-tune it”</title>
+      <link>https://mohammadtakneshan.github.io/blog/multisent-just-fine-tune-it.html</link>
+      <guid isPermaLink="true">https://mohammadtakneshan.github.io/blog/multisent-just-fine-tune-it.html</guid>
+      <description>When multilingual sentiment needs more than a single checkpoint and a hope.</description>
+      <pubDate>Sun, 19 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Diabetes risk models: ROC curves and clinical restraint</title>
+      <link>https://mohammadtakneshan.github.io/blog/diabetes-risk-models.html</link>
+      <guid isPermaLink="true">https://mohammadtakneshan.github.io/blog/diabetes-risk-models.html</guid>
+      <description>What a clean dashboard can hide about thresholds and leakage.</description>
+      <pubDate>Sun, 19 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>The quiet craft of internal tools nobody demos on Twitter</title>
+      <link>https://mohammadtakneshan.github.io/blog/internal-tools-quiet-craft.html</link>
+      <guid isPermaLink="true">https://mohammadtakneshan.github.io/blog/internal-tools-quiet-craft.html</guid>
+      <description>WorkOS, Docker Compose, and backups over another chat UI.</description>
+      <pubDate>Sun, 19 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What markerless motion capture taught me about evaluation honesty</title>
+      <link>https://mohammadtakneshan.github.io/blog/markerless-motion-capture-evaluation.html</link>
+      <guid isPermaLink="true">https://mohammadtakneshan.github.io/blog/markerless-motion-capture-evaluation.html</guid>
+      <description>Metrics that win a slide can still lose the lab. Notes from a computer-vision thesis path.</description>
+      <pubDate>Sun, 19 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Travel Avenue, from blank repo to a storefront that must sell</title>
+      <link>https://mohammadtakneshan.github.io/blog/travel-avenue-storefront.html</link>
+      <guid isPermaLink="true">https://mohammadtakneshan.github.io/blog/travel-avenue-storefront.html</guid>
+      <description>Catalog, media, SEO, and the automation underneath a UAE luggage DTC channel.</description>
+      <pubDate>Sun, 19 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How I ship AI workflows that survive contact with operations</title>
+      <link>https://mohammadtakneshan.github.io/blog/ai-workflows-operations.html</link>
+      <guid isPermaLink="true">https://mohammadtakneshan.github.io/blog/ai-workflows-operations.html</guid>
+      <description>A field guide to the gap between prototypes and the warehouse floor: n8n, AWS runbooks, and the unglamorous layer that keeps agentic tools honest.</description>
+      <pubDate>Wed, 08 Jul 2026 10:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

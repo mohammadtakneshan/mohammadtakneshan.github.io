@@ -1,0 +1,44 @@
+# Mohammad Takneshan — mohammadtakneshan.github.io
+# Everyone is welcome, including AI crawlers: this site is meant to be
+# read, indexed, and cited by both search engines and AI systems.
+
+User-agent: *
+Allow: /
+
+# ── AI search crawlers (index content for AI answers) ──
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: Bravebot
+Allow: /
+
+# ── AI assistants (fetch pages in response to user questions) ──
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: Kimi-User
+Allow: /
+
+# ── AI training crawlers (allowed — visibility over restriction) ──
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://mohammadtakneshan.github.io/sitemap.xml
