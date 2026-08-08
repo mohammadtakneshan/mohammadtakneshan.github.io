@@ -68,3 +68,32 @@ double-click doesn't also toggle — keep that if editing `script.js`.
 Placeholder data/screens are intentional for now (device mockups are CSS, stats approximate).
 Real screenshots, images, videos, and fact-checking come in a later phase.
 Source of truth for content: the owner's LinkedIn export and CV (ask the owner).
+
+## Keeping documentation current
+
+Documentation maintenance is part of the change, not a follow-up change. A task is
+not finished until the files that describe the site match it.
+
+| File | Holds | Update when |
+| --- | --- | --- |
+| `AGENTS.md` (this file) | agent rules and site conventions | a convention, layout source, or workflow changes |
+| `NOTES.md` | working notes | you learn something worth keeping that is not a rule |
+| `llms.txt` | curated markdown map of the site for agents | any page is added, renamed, or removed |
+| `sitemap.xml` | every indexable page + `<lastmod>` | same, plus on meaningful edits |
+| `blog/feed.xml` | RSS items | a post is published |
+| `README.md` | human-facing blurb | **never agent instructions** |
+
+Rules:
+
+1. **Update in the same change.** Adding or renaming a page means `llms.txt`,
+   `sitemap.xml`, and (for posts) `blog/feed.xml` change in that same commit — not
+   in a cleanup pass afterwards.
+2. **New convention → write it here.** If you establish a pattern the next agent
+   must follow (a component, a variable, an image convention, a naming rule), add it
+   to the relevant section above rather than leaving it implicit in the markup.
+3. **Delete what is no longer true.** A wrong instruction is worse than a missing one.
+4. **`design-previews/` is a historical reference, not documentation.** Never edit it
+   to reflect a change to the live site — record the change here instead.
+5. Site-update dates follow the [update-date convention](#update-date-convention-top-bar);
+   a documentation-only edit is not a site update and does not move that date.
+6. **Report which files you updated** — or say explicitly that none needed it, and why.
