@@ -1,6 +1,6 @@
 # Mohammad Takneshan
 
-> Personal portfolio of Mohammad Takneshan — AI Automation Engineer at Osaka Group UAE in Dubai, and AI researcher (computer vision, multimodal emotion recognition). Covers work, projects, research and publications, education, and the essay collection "AI and Autonomous Systems Report".
+> Personal portfolio of Mohammad Takneshan — Software Engineer at Osaka Group UAE in Dubai, and AI researcher (computer vision, multimodal emotion recognition). Covers work, projects, research and publications, education, and the essay collection "AI and Autonomous Systems Report".
 
 The site is static HTML. The homepage is a single-page CV; long-form writing lives in the blog. Key facts: BSc Computer Science (University of Debrecen, 2026, excellent); builds e-commerce automation at Osaka Group (n8n, AWS, Docker, WorkOS); built Travel Avenue (storefront, CRM, native iOS/Android app) and the Masaryk Medical University Student Union website.
 
