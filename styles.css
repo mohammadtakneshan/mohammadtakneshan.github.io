@@ -845,6 +845,8 @@ html[data-theme="dark"] .union-main { filter: drop-shadow(0 18px 40px rgba(0, 0,
 /* Expandable descriptions — clamp to 4 lines until toggled open.
    Fade must match the surface behind the text (page bg for Work/Projects;
    warmer/darker --pub-bg for Research cards — not the page wash). */
+.desc > p { margin: 0 0 .85em; }
+.desc > p:last-child { margin-bottom: 0; }
 .desc-clamped { max-height: calc(1.55em * 4); overflow: hidden; position: relative; }
 .desc-clamped::after {
   content: "";

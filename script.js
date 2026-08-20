@@ -372,7 +372,9 @@ document.addEventListener('keydown', (e) => {
 
 // Expandable descriptions: clamp Work / Projects / Research notes to 4 lines,
 // revealing a Read more / Show less toggle only when the text actually overflows.
-const clampTargets = document.querySelectorAll('#work .wrow .body p, #projects .wrow .body p, #research .pub .note');
+// `.desc` wraps multi-paragraph entries so they clamp as one block; single-paragraph
+// entries still clamp on their own `p`, which is a direct child of `.body`.
+const clampTargets = document.querySelectorAll('#work .wrow .body .desc, #work .wrow .body > p, #projects .wrow .body .desc, #projects .wrow .body > p, #research .pub .note');
 clampTargets.forEach((el) => {
   const btn = document.createElement('button');
   btn.type = 'button';
